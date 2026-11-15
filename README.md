@@ -220,7 +220,3 @@ This is a strong foundation, not a certified medical product. Please work throug
 ## Roadmap
 
 Real telephony and SMS, more languages, a symptom vocabulary per specialty, clinical validation of case matching on real consented data, integration with a hospital's records system, and encrypted storage.
-
-## License
-
-Choose a license before publishing (for example MIT or Apache-2.0) and add it as `LICENSE`.
