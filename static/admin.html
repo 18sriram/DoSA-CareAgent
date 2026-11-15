@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Administration</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;600&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/common.css">
+<style>
+  .grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  .model h3 { font-size: 1rem; } .model .prov { color: var(--teal); font-weight: 600; font-size: .88rem; }
+  .kv { display: grid; grid-template-columns: 110px 1fr; gap: 4px 10px; font-size: .88rem; margin-top: 10px; }
+  .kv dt { color: var(--muted); } .kv dd { margin: 0; }
+  .bar { height: 8px; background: #e5edf0; border-radius: 4px; overflow: hidden; width: 110px; display: inline-block; vertical-align: middle; }
+  .bar i { display: block; height: 100%; background: var(--routine); } .bar i.bad { background: var(--high); }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 18px 0; }
+  .stat { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+  .stat b { font-size: 1.6rem; display: block; }
+  .detail { font-family: ui-monospace, monospace; font-size: .75rem; color: var(--muted); max-width: 340px; overflow-wrap: anywhere; }
+  .flow li { margin-bottom: 6px; }
+  .toolbar { display: flex; gap: 10px; align-items: end; margin-bottom: 14px; flex-wrap: wrap; }
+  .toolbar > div { min-width: 200px; }
+  .toolbar label.field { margin-top: 0; }
+</style>
+</head>
+<body>
+<div class="page"><div class="wrapper">
+  <div class="tabs" role="tablist" id="tabs">
+    <button role="tab" aria-selected="true" data-tab="staff">Staff accounts</button>
+    <button role="tab" aria-selected="false" data-tab="audit">Audit log</button>
+    <button role="tab" aria-selected="false" data-tab="impact">Impact</button>
+    <button role="tab" aria-selected="false" data-tab="system">System and models</button>
+    <button role="tab" aria-selected="false" data-tab="privacy">Privacy</button>
+  </div>
+
+  <section id="tab-staff">
+    <div class="card" style="margin-bottom:18px">
+      <h2>Add a staff member</h2>
+      <p class="muted">They sign in with the temporary password and must choose their own straight away.</p>
+      <div class="row2">
+        <div><label class="field" for="nu">Username</label><input id="nu" type="text" autocomplete="off" autocapitalize="none"></div>
+        <div><label class="field" for="nn">Full name</label><input id="nn" type="text" autocomplete="off"></div>
+        <div><label class="field" for="nr">Role</label>
+          <select id="nr"><option value="doctor">Doctor</option><option value="front_desk">Reception</option><option value="admin">Administrator</option></select></div>
+        <div id="specwrap"><label class="field" for="ns">Specialty</label><input id="ns" type="text" value="orthopaedics"></div>
+        <div><label class="field" for="np">Temporary password</label><input id="np" type="password" autocomplete="new-password"></div>
+      </div>
+      <div class="error" id="nerr" role="alert"></div>
+      <button class="btn" id="ncreate" style="margin-top:10px">Create account</button>
+    </div>
+    <div class="card"><h2 style="margin-bottom:10px">Staff</h2>
+      <div class="scroll-x"><table><thead><tr><th>Name</th><th>Username</th><th>Role</th><th>Status</th><th>Supervisor <span class="muted" title="Unanswered help-line messages move up to them">(?)</span></th><th>Last sign-in</th><th></th></tr></thead><tbody id="users"></tbody></table></div>
+    </div>
+  </section>
+
+  <section id="tab-audit" hidden>
+    <div class="card">
+      <h2>Audit log</h2>
+      <p class="muted">Every sign-in, record opened, decision and change, with who did it. Entries cannot be edited here.</p>
+      <div class="toolbar">
+        <div><label class="field" for="af">Show actions starting with</label>
+          <select id="af"><option value="">All actions</option><option value="login">Sign-ins</option><option value="intake_viewed">Records opened</option><option value="past_case">Past cases opened</option>
+          <option value="urgency">Urgency decisions</option><option value="prescription">Prescriptions</option><option value="user_">User changes</option><option value="password">Passwords</option><option value="visit">Visits</option>
+          <option value="message">Help-line messages</option><option value="escalation">Messages passed up</option><option value="appointment">Appointments</option>
+          <option value="schedule">Timetables</option><option value="question_set">Intake questions</option><option value="standard_answer">Standard answers</option>
+          <option value="helpline">Help-line calls</option><option value="pin">PINs</option><option value="emergency">Emergency calls</option></select></div>
+        <button class="btn secondary" id="aref">Refresh</button>
+      </div>
+      <div class="scroll-x"><table><thead><tr><th>When</th><th>Who</th><th>Action</th><th>Object</th><th>Details</th><th>From</th></tr></thead><tbody id="audit"></tbody></table></div>
+    </div>
+  </section>
+
+  <section id="tab-impact" hidden>
+    <div class="toolbar"><div><label class="field" for="irange">Period</label>
+      <select id="irange"><option value="7">Last 7 days</option><option value="30" selected>Last 30 days</option><option value="90">Last 90 days</option></select></div></div>
+    <p class="muted">What the system actually did. These are counts and medians with no patient information. They do not prove clinical benefit: measure consultation times and waiting times at your hospital before and after to see that.</p>
+    <div id="impact"></div>
+  </section>
+
+  <section id="tab-privacy" hidden>
+    <div class="card">
+      <h2>Erase a patient's data</h2>
+      <p class="muted">Removes the patient's name, age, phone, PIN, call transcripts, symptoms, prescriptions, check-ins and messages, and cancels their appointments. Only anonymous counts, the record number and the consent log remain. <b>This cannot be undone.</b> Use it for a patient's deletion request, after your own checks.</p>
+      <div class="toolbar"><div style="min-width:280px"><label class="field" for="pq">Find the patient (name, phone or record number)</label><input id="pq" type="search" autocomplete="off" placeholder="At least 2 characters"></div></div>
+      <div class="scroll-x"><table><thead><tr><th>Name</th><th>Record number</th><th>Phone</th><th>Registered</th><th></th></tr></thead><tbody id="prows"></tbody></table></div>
+      <p class="muted" id="pnone" hidden>No matching patients.</p>
+    </div>
+  </section>
+
+  <section id="tab-system" hidden>
+    <div class="stats" id="counts"></div>
+    <h2 style="margin:6px 0 10px">The three models and what each one does</h2>
+    <div class="grid3" id="models"></div>
+    <div class="card" style="margin-top:18px"><h2>Health over the last 24 hours</h2>
+      <p class="muted">Measured from real calls. A falling success rate or rising time means a model service is struggling.</p>
+      <div class="scroll-x"><table><thead><tr><th>Model</th><th>Calls</th><th>Success</th><th>Average time</th><th>Slowest 5%</th><th>Last error</th></tr></thead><tbody id="health"></tbody></table></div>
+      <p class="muted" id="nohealth" hidden>No model calls in the last 24 hours.</p>
+    </div>
+    <div class="card" style="margin-top:18px"><h2>How a patient's information moves</h2>
+      <ol class="flow">
+        <li><b>The patient speaks</b> in their own language. The audio is sent to the speech provider (Gnani). Our server deletes its copy straight after and keeps only the text.</li>
+        <li><b>The language model</b> (Groq) receives the text of the answers and returns a short summary and symptom tags. It does not decide urgency or give advice.</li>
+        <li><b>Fixed rules</b>, not an AI, check every sentence for emergency wording and suggest an urgency level.</li>
+        <li><b>The doctor decides.</b> Urgency, prescriptions and every alert wait for the treating doctor's confirmation.</li>
+        <li><b>Everything is logged</b> in the audit log with who did what.</li>
+      </ol>
+      <p class="muted" style="margin-top:12px"><b>For the hospital's data protection officer:</b> steps 1 and 2 send patient audio and text to two outside companies. Before real patients use this, sign data processing agreements with them, or run the models inside the hospital's own network.</p>
+    </div>
+    <div class="card" style="margin-top:18px"><h2>Settings in use</h2><dl class="kv" id="settings"></dl></div>
+  </section>
+</div></div>
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mh">
+  <div class="scrim" id="mscrim"></div>
+  <div class="box"><h2 id="mh">Reset password</h2><p class="muted" id="mwho"></p>
+    <label class="field" for="rp">New temporary password</label><input id="rp" type="password" autocomplete="new-password">
+    <div class="error" id="rerr" role="alert"></div>
+    <div style="display:flex;gap:8px;margin-top:14px"><button class="btn" id="rgo">Reset</button><button class="btn secondary" id="rcancel">Cancel</button></div>
+  </div>
+</div>
+<div class="modal" id="emodal" hidden role="dialog" aria-modal="true" aria-labelledby="eh">
+  <div class="scrim" id="escrim"></div>
+  <div class="box"><h2 id="eh" style="color:var(--emergency)">Erase this patient?</h2>
+    <p id="ewho" style="font-weight:600;margin:6px 0"></p>
+    <p class="muted">Their identity and everything about their care will be permanently removed. Any call in progress is ended.</p>
+    <label class="field" for="econfirm">Type the record number to confirm</label><input id="econfirm" type="text" autocomplete="off" spellcheck="false">
+    <div class="error" id="eerr" role="alert"></div>
+    <div style="display:flex;gap:8px;margin-top:14px"><button class="btn danger" id="ego">Erase permanently</button><button class="btn secondary" id="ecancel">Cancel</button></div>
+  </div>
+</div>
+<script src="/static/js/common.js"></script>
+<script src="/static/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patients</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;600&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/common.css">
+<link rel="stylesheet" href="/static/css/doctor.css">
+</head>
+<body>
+<nav class="subnav" id="subnav" aria-label="Sections">
+  <button data-view="patients" aria-selected="true">Patients</button>
+  <button data-view="messages" aria-selected="false">Messages <span class="nbadge" id="msgbadge" hidden></span></button>
+  <button data-view="schedule" aria-selected="false">Schedule</button>
+  <button data-view="questions" aria-selected="false">Intake questions</button>
+</nav>
+<div class="app" id="view-patients">
+  <aside>
+    <header>
+      <h1>Waiting patients</h1>
+      <div id="counts" class="counts"></div>
+      <div id="stats"></div>
+    </header>
+    <div id="list" role="list"></div>
+  </aside>
+  <main id="detail"><div class="empty">Select a patient to review their pre-visit call.</div></main>
+</div>
+
+<div class="viewpage" id="view-messages" hidden>
+  <div class="wrapper">
+    <h2 class="vh">Messages from patients</h2>
+    <p class="muted">Questions and symptom reports from the help line that the assistant could not answer from the patient's record. Emergencies and urgent items come first. Unanswered messages move to your supervisor.</p>
+    <div id="msg-open"></div>
+    <h3 class="vh2">Recently answered</h3>
+    <div id="msg-done"></div>
+    <h3 class="vh2">My standard answers</h3>
+    <p class="muted">Replies you chose to reuse. The help line reads them to other patients of yours who ask the same thing. Delete any you no longer stand behind.</p>
+    <div id="bank-list"></div>
+  </div>
+</div>
+<div class="viewpage" id="view-schedule" hidden>
+  <div class="wrapper">
+    <h2 class="vh">My schedule</h2>
+    <p class="muted">The hours you see patients. Reception and the help line only offer times inside these hours.</p>
+    <section class="sumcard"><h2>Weekly hours</h2><div id="sch-days"></div>
+      <div class="sch-foot"><label>Appointment length <select id="sch-len"></select></label>
+        <button class="primary" id="sch-save">Save hours</button><span id="sch-saved" class="meta"></span></div></section>
+    <section class="sumcard"><h2>Days off</h2>
+      <div class="sch-off"><input type="date" id="off-date" aria-label="Date"><input type="text" id="off-reason" placeholder="Reason (optional)" maxlength="120" aria-label="Reason"><button class="secondary" id="off-add">Mark day off</button></div>
+      <div id="off-warn" class="warn" hidden></div><div id="off-list"></div></section>
+    <section class="sumcard"><h2>Upcoming appointments</h2><div id="appt-list"></div></section>
+  </div>
+</div>
+<div class="viewpage" id="view-questions" hidden>
+  <div class="wrapper">
+    <h2 class="vh">Intake questions</h2>
+    <p class="muted">What your patients are asked by voice while they wait. Write each question in Telugu (the patient hears it) and in English (you read it on your screen). Use <b>Hear it</b> to listen exactly as the patient will.</p>
+    <div id="q-list"></div>
+    <div class="q-add"><button class="secondary" id="q-add">+ Add a question</button><span class="meta" id="q-count"></span></div>
+    <section class="sumcard closing"><h2>Always asked last</h2><div id="q-closing"></div>
+      <div class="meta">This lets patients correct anything they said earlier. It cannot be removed.</div></section>
+    <div class="q-foot"><button class="primary" id="q-save">Save questions</button><button class="secondary" id="q-reset">Use the standard list</button><span id="q-note" class="meta"></span></div>
+    <p class="meta" style="margin-top:14px">Changes apply to patients who start their call after you save. A call already in progress is not affected. The assistant picks symptoms out of the answers using a fixed orthopaedic list, so questions about other topics will be recorded in the transcript for you to read but will not add symptom tags.</p>
+  </div>
+</div>
+<div id="drawer" hidden role="dialog" aria-modal="true" aria-labelledby="dTitle">
+  <div class="scrim" id="scrim"></div>
+  <div class="dpanel">
+    <div class="dhead">
+      <div><h2 id="dTitle">Past case</h2><div class="dsub" id="dSub"></div></div>
+      <button id="dClose">Close</button>
+    </div>
+    <div id="dBody"></div>
+  </div>
+</div>
+
+<script src="/static/js/common.js"></script>
+<script src="/static/js/doctor.js"></script>
+</body>
+</html>

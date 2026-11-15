@@ -1,0 +1,2183 @@
+[
+  {
+    "id": "C001",
+    "record_no": "HR-2025-0001",
+    "age": 53,
+    "sex": "F",
+    "diagnosis": "Knee osteoarthritis",
+    "path": "improved",
+    "outcome": "Improved with physiotherapy and weight management",
+    "baseline": {
+      "bmi": 27,
+      "other_conditions": "Hypothyroidism",
+      "diet_notes": "Weight-reducing diet; calcium and vitamin D rich foods."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-03-24",
+        "tags": [
+          "location_knee",
+          "duration_chronic",
+          "pain_walking",
+          "morning_stiffness",
+          "stairs_difficulty"
+        ],
+        "findings": "Joint-line tenderness, crepitus on movement, morning stiffness under 30 minutes. No effusion.",
+        "investigations": "Standing knee X-ray: reduced joint space.",
+        "treatment": "Physiotherapy referral, quadriceps strengthening, weight management advice, simple pain relief as needed."
+      },
+      {
+        "week": 3,
+        "date": "2025-04-14",
+        "tags": [
+          "location_knee",
+          "stairs_difficulty"
+        ],
+        "findings": "Pain easing, stairs still slow.",
+        "investigations": "None.",
+        "treatment": "Physiotherapy and exercises continued."
+      },
+      {
+        "week": 6,
+        "date": "2025-05-05",
+        "tags": [
+          "location_knee"
+        ],
+        "findings": "Pain minimal, walking normal.",
+        "investigations": "None.",
+        "treatment": "Home exercise plan; review if pain returns."
+      }
+    ]
+  },
+  {
+    "id": "C002",
+    "record_no": "HR-2025-0002",
+    "age": 41,
+    "sex": "F",
+    "diagnosis": "Knee osteoarthritis",
+    "path": "improved",
+    "outcome": "Improved with physiotherapy and weight management",
+    "baseline": {
+      "bmi": 27,
+      "other_conditions": "Type 2 diabetes",
+      "diet_notes": "Weight-reducing diet; calcium and vitamin D rich foods."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-09-22",
+        "tags": [
+          "location_knee",
+          "duration_chronic",
+          "pain_walking",
+          "morning_stiffness",
+          "stairs_difficulty"
+        ],
+        "findings": "Joint-line tenderness, crepitus on movement, morning stiffness under 30 minutes. No effusion.",
+        "investigations": "Standing knee X-ray: reduced joint space.",
+        "treatment": "Physiotherapy referral, quadriceps strengthening, weight management advice, simple pain relief as needed."
+      },
+      {
+        "week": 3,
+        "date": "2025-10-13",
+        "tags": [
+          "location_knee",
+          "stairs_difficulty",
+          "swelling"
+        ],
+        "findings": "Pain easing, stairs still slow.",
+        "investigations": "None.",
+        "treatment": "Physiotherapy and exercises continued."
+      },
+      {
+        "week": 6,
+        "date": "2025-11-03",
+        "tags": [
+          "location_knee"
+        ],
+        "findings": "Pain minimal, walking normal.",
+        "investigations": "None.",
+        "treatment": "Home exercise plan; review if pain returns."
+      }
+    ]
+  },
+  {
+    "id": "C003",
+    "record_no": "HR-2025-0003",
+    "age": 33,
+    "sex": "M",
+    "diagnosis": "Knee osteoarthritis",
+    "path": "improved",
+    "outcome": "Improved with physiotherapy and weight management",
+    "baseline": {
+      "bmi": 26,
+      "other_conditions": "Hypothyroidism",
+      "diet_notes": "Weight-reducing diet; calcium and vitamin D rich foods."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-05-09",
+        "tags": [
+          "location_knee",
+          "duration_chronic",
+          "pain_walking",
+          "morning_stiffness",
+          "stairs_difficulty"
+        ],
+        "findings": "Joint-line tenderness, crepitus on movement, morning stiffness under 30 minutes. No effusion.",
+        "investigations": "Standing knee X-ray: reduced joint space.",
+        "treatment": "Physiotherapy referral, quadriceps strengthening, weight management advice, simple pain relief as needed."
+      },
+      {
+        "week": 3,
+        "date": "2025-05-30",
+        "tags": [
+          "location_knee",
+          "stairs_difficulty"
+        ],
+        "findings": "Pain easing, stairs still slow.",
+        "investigations": "None.",
+        "treatment": "Physiotherapy and exercises continued."
+      },
+      {
+        "week": 6,
+        "date": "2025-06-20",
+        "tags": [
+          "location_knee"
+        ],
+        "findings": "Pain minimal, walking normal.",
+        "investigations": "None.",
+        "treatment": "Home exercise plan; review if pain returns."
+      }
+    ]
+  },
+  {
+    "id": "C004",
+    "record_no": "HR-2025-0004",
+    "age": 64,
+    "sex": "M",
+    "diagnosis": "Knee osteoarthritis",
+    "path": "imaging_injection",
+    "outcome": "X-ray/MRI done; joint injection given",
+    "baseline": {
+      "bmi": 26,
+      "other_conditions": "None",
+      "diet_notes": "Weight-reducing diet; calcium and vitamin D rich foods."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-02-06",
+        "tags": [
+          "location_knee",
+          "duration_chronic",
+          "pain_walking",
+          "morning_stiffness",
+          "stairs_difficulty"
+        ],
+        "findings": "Joint-line tenderness, crepitus on movement, morning stiffness under 30 minutes. No effusion.",
+        "investigations": "Standing knee X-ray: reduced joint space.",
+        "treatment": "Physiotherapy referral, quadriceps strengthening, weight management advice, simple pain relief as needed."
+      },
+      {
+        "week": 3,
+        "date": "2025-02-27",
+        "tags": [
+          "location_knee",
+          "pain_walking",
+          "swelling"
+        ],
+        "findings": "Night pain and swelling despite physiotherapy.",
+        "investigations": "MRI knee ordered.",
+        "treatment": "Pain relief reviewed; walking stick advised."
+      },
+      {
+        "week": 6,
+        "date": "2025-03-20",
+        "tags": [
+          "location_knee",
+          "pain_night",
+          "swelling"
+        ],
+        "findings": "Swelling persists, partial relief only.",
+        "investigations": "MRI: cartilage thinning, small effusion.",
+        "treatment": "Intra-articular injection given; exercises continued."
+      }
+    ]
+  },
+  {
+    "id": "C005",
+    "record_no": "HR-2025-0005",
+    "age": 54,
+    "sex": "F",
+    "diagnosis": "Knee osteoarthritis",
+    "path": "imaging_injection",
+    "outcome": "X-ray/MRI done; joint injection given",
+    "baseline": {
+      "bmi": 34,
+      "other_conditions": "None",
+      "diet_notes": "Weight-reducing diet; calcium and vitamin D rich foods."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-06-03",
+        "tags": [
+          "location_knee",
+          "duration_chronic",
+          "pain_walking",
+          "morning_stiffness",
+          "stairs_difficulty"
+        ],
+        "findings": "Joint-line tenderness, crepitus on movement, morning stiffness under 30 minutes. No effusion.",
+        "investigations": "Standing knee X-ray: reduced joint space.",
+        "treatment": "Physiotherapy referral, quadriceps strengthening, weight management advice, simple pain relief as needed."
+      },
+      {
+        "week": 3,
+        "date": "2025-06-24",
+        "tags": [
+          "location_knee",
+          "pain_walking",
+          "swelling"
+        ],
+        "findings": "Night pain and swelling despite physiotherapy.",
+        "investigations": "MRI knee ordered.",
+        "treatment": "Pain relief reviewed; walking stick advised."
+      },
+      {
+        "week": 6,
+        "date": "2025-07-15",
+        "tags": [
+          "location_knee",
+          "pain_night",
+          "swelling"
+        ],
+        "findings": "Swelling persists, partial relief only.",
+        "investigations": "MRI: cartilage thinning, small effusion.",
+        "treatment": "Intra-articular injection given; exercises continued."
+      }
+    ]
+  },
+  {
+    "id": "C006",
+    "record_no": "HR-2025-0006",
+    "age": 34,
+    "sex": "F",
+    "diagnosis": "Knee osteoarthritis",
+    "path": "surgical_referral",
+    "outcome": "Referred for knee replacement evaluation",
+    "baseline": {
+      "bmi": 31,
+      "other_conditions": "None",
+      "diet_notes": "Weight-reducing diet; calcium and vitamin D rich foods."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-04-08",
+        "tags": [
+          "location_knee",
+          "duration_chronic",
+          "pain_walking",
+          "morning_stiffness",
+          "stairs_difficulty"
+        ],
+        "findings": "Joint-line tenderness, crepitus on movement, morning stiffness under 30 minutes. No effusion.",
+        "investigations": "Standing knee X-ray: reduced joint space.",
+        "treatment": "Physiotherapy referral, quadriceps strengthening, weight management advice, simple pain relief as needed."
+      },
+      {
+        "week": 3,
+        "date": "2025-04-29",
+        "tags": [
+          "location_knee",
+          "pain_night",
+          "swelling",
+          "limited_movement"
+        ],
+        "findings": "Night pain, swelling and reduced bending.",
+        "investigations": "MRI: advanced cartilage loss.",
+        "treatment": "Activity modification; analgesia adjusted."
+      },
+      {
+        "week": 6,
+        "date": "2025-05-20",
+        "tags": [
+          "location_knee",
+          "pain_night",
+          "limited_movement",
+          "locking_catching"
+        ],
+        "findings": "Locking episodes and limited movement.",
+        "investigations": "Repeat assessment.",
+        "treatment": "Referred to the joint replacement clinic."
+      }
+    ]
+  },
+  {
+    "id": "C007",
+    "record_no": "HR-2025-0007",
+    "age": 64,
+    "sex": "F",
+    "diagnosis": "Knee osteoarthritis",
+    "path": "surgical_referral",
+    "outcome": "Referred for knee replacement evaluation",
+    "baseline": {
+      "bmi": 35,
+      "other_conditions": "None",
+      "diet_notes": "Weight-reducing diet; calcium and vitamin D rich foods."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-02-07",
+        "tags": [
+          "location_knee",
+          "duration_chronic",
+          "pain_walking",
+          "morning_stiffness",
+          "stairs_difficulty"
+        ],
+        "findings": "Joint-line tenderness, crepitus on movement, morning stiffness under 30 minutes. No effusion.",
+        "investigations": "Standing knee X-ray: reduced joint space.",
+        "treatment": "Physiotherapy referral, quadriceps strengthening, weight management advice, simple pain relief as needed."
+      },
+      {
+        "week": 3,
+        "date": "2025-02-28",
+        "tags": [
+          "location_knee",
+          "pain_night",
+          "swelling",
+          "limited_movement"
+        ],
+        "findings": "Night pain, swelling and reduced bending.",
+        "investigations": "MRI: advanced cartilage loss.",
+        "treatment": "Activity modification; analgesia adjusted."
+      },
+      {
+        "week": 6,
+        "date": "2025-03-21",
+        "tags": [
+          "location_knee",
+          "pain_night",
+          "limited_movement",
+          "locking_catching"
+        ],
+        "findings": "Locking episodes and limited movement.",
+        "investigations": "Repeat assessment.",
+        "treatment": "Referred to the joint replacement clinic."
+      }
+    ]
+  },
+  {
+    "id": "C008",
+    "record_no": "HR-2025-0008",
+    "age": 77,
+    "sex": "M",
+    "diagnosis": "Lumbar disc prolapse",
+    "path": "improved",
+    "outcome": "Improved with rest, medication and physiotherapy",
+    "baseline": {
+      "bmi": 29,
+      "other_conditions": "Hypothyroidism",
+      "diet_notes": "Hydration, fibre-rich diet; avoid long periods of sitting."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-08-12",
+        "tags": [
+          "location_back",
+          "duration_subacute",
+          "radiating_leg_pain",
+          "pain_sitting"
+        ],
+        "findings": "Pain on forward bending, positive straight-leg raise on one side, power normal.",
+        "investigations": "No imaging at first visit.",
+        "treatment": "Short rest, avoid heavy lifting, pain relief, physiotherapy referral."
+      },
+      {
+        "week": 3,
+        "date": "2025-09-02",
+        "tags": [
+          "location_back",
+          "radiating_leg_pain"
+        ],
+        "findings": "Leg pain reducing, bending improved.",
+        "investigations": "None.",
+        "treatment": "Physiotherapy continued."
+      },
+      {
+        "week": 6,
+        "date": "2025-09-23",
+        "tags": [
+          "location_back"
+        ],
+        "findings": "Mild back pain, no leg pain.",
+        "investigations": "None.",
+        "treatment": "Gradual return to normal activity."
+      }
+    ]
+  },
+  {
+    "id": "C009",
+    "record_no": "HR-2025-0009",
+    "age": 47,
+    "sex": "F",
+    "diagnosis": "Lumbar disc prolapse",
+    "path": "improved",
+    "outcome": "Improved with rest, medication and physiotherapy",
+    "baseline": {
+      "bmi": 24,
+      "other_conditions": "Type 2 diabetes, hypertension",
+      "diet_notes": "Hydration, fibre-rich diet; avoid long periods of sitting."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-07-10",
+        "tags": [
+          "location_back",
+          "duration_subacute",
+          "radiating_leg_pain",
+          "pain_sitting"
+        ],
+        "findings": "Pain on forward bending, positive straight-leg raise on one side, power normal.",
+        "investigations": "No imaging at first visit.",
+        "treatment": "Short rest, avoid heavy lifting, pain relief, physiotherapy referral."
+      },
+      {
+        "week": 3,
+        "date": "2025-07-31",
+        "tags": [
+          "location_back",
+          "radiating_leg_pain"
+        ],
+        "findings": "Leg pain reducing, bending improved.",
+        "investigations": "None.",
+        "treatment": "Physiotherapy continued."
+      },
+      {
+        "week": 6,
+        "date": "2025-08-21",
+        "tags": [
+          "location_back"
+        ],
+        "findings": "Mild back pain, no leg pain.",
+        "investigations": "None.",
+        "treatment": "Gradual return to normal activity."
+      }
+    ]
+  },
+  {
+    "id": "C010",
+    "record_no": "HR-2025-0010",
+    "age": 64,
+    "sex": "M",
+    "diagnosis": "Lumbar disc prolapse",
+    "path": "improved",
+    "outcome": "Improved with rest, medication and physiotherapy",
+    "baseline": {
+      "bmi": 30,
+      "other_conditions": "Type 2 diabetes",
+      "diet_notes": "Hydration, fibre-rich diet; avoid long periods of sitting."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-02-16",
+        "tags": [
+          "location_back",
+          "duration_subacute",
+          "radiating_leg_pain",
+          "pain_sitting"
+        ],
+        "findings": "Pain on forward bending, positive straight-leg raise on one side, power normal.",
+        "investigations": "No imaging at first visit.",
+        "treatment": "Short rest, avoid heavy lifting, pain relief, physiotherapy referral."
+      },
+      {
+        "week": 3,
+        "date": "2025-03-09",
+        "tags": [
+          "location_back",
+          "radiating_leg_pain"
+        ],
+        "findings": "Leg pain reducing, bending improved.",
+        "investigations": "None.",
+        "treatment": "Physiotherapy continued."
+      },
+      {
+        "week": 6,
+        "date": "2025-03-30",
+        "tags": [
+          "location_back"
+        ],
+        "findings": "Mild back pain, no leg pain.",
+        "investigations": "None.",
+        "treatment": "Gradual return to normal activity."
+      }
+    ]
+  },
+  {
+    "id": "C011",
+    "record_no": "HR-2025-0011",
+    "age": 74,
+    "sex": "M",
+    "diagnosis": "Lumbar disc prolapse",
+    "path": "imaging_injection",
+    "outcome": "MRI spine done; epidural injection given",
+    "baseline": {
+      "bmi": 26,
+      "other_conditions": "Hypothyroidism",
+      "diet_notes": "Hydration, fibre-rich diet; avoid long periods of sitting."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-06-30",
+        "tags": [
+          "location_back",
+          "duration_subacute",
+          "radiating_leg_pain",
+          "pain_sitting"
+        ],
+        "findings": "Pain on forward bending, positive straight-leg raise on one side, power normal.",
+        "investigations": "No imaging at first visit.",
+        "treatment": "Short rest, avoid heavy lifting, pain relief, physiotherapy referral."
+      },
+      {
+        "week": 3,
+        "date": "2025-07-21",
+        "tags": [
+          "location_back",
+          "radiating_leg_pain",
+          "numbness"
+        ],
+        "findings": "Leg pain with new tingling.",
+        "investigations": "MRI lumbar spine ordered.",
+        "treatment": "Nerve-pain medication reviewed."
+      },
+      {
+        "week": 6,
+        "date": "2025-08-11",
+        "tags": [
+          "location_back",
+          "radiating_leg_pain",
+          "numbness"
+        ],
+        "findings": "Nerve pain persisting.",
+        "investigations": "MRI: disc bulge touching a nerve root.",
+        "treatment": "Epidural injection given."
+      }
+    ]
+  },
+  {
+    "id": "C012",
+    "record_no": "HR-2025-0012",
+    "age": 35,
+    "sex": "M",
+    "diagnosis": "Lumbar disc prolapse",
+    "path": "imaging_injection",
+    "outcome": "MRI spine done; epidural injection given",
+    "baseline": {
+      "bmi": 24,
+      "other_conditions": "Hypertension",
+      "diet_notes": "Hydration, fibre-rich diet; avoid long periods of sitting."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-02-12",
+        "tags": [
+          "location_back",
+          "duration_subacute",
+          "radiating_leg_pain",
+          "pain_sitting"
+        ],
+        "findings": "Pain on forward bending, positive straight-leg raise on one side, power normal.",
+        "investigations": "No imaging at first visit.",
+        "treatment": "Short rest, avoid heavy lifting, pain relief, physiotherapy referral."
+      },
+      {
+        "week": 3,
+        "date": "2025-03-05",
+        "tags": [
+          "location_back",
+          "radiating_leg_pain",
+          "numbness"
+        ],
+        "findings": "Leg pain with new tingling.",
+        "investigations": "MRI lumbar spine ordered.",
+        "treatment": "Nerve-pain medication reviewed."
+      },
+      {
+        "week": 6,
+        "date": "2025-03-26",
+        "tags": [
+          "location_back",
+          "radiating_leg_pain",
+          "numbness"
+        ],
+        "findings": "Nerve pain persisting.",
+        "investigations": "MRI: disc bulge touching a nerve root.",
+        "treatment": "Epidural injection given."
+      }
+    ]
+  },
+  {
+    "id": "C013",
+    "record_no": "HR-2025-0013",
+    "age": 30,
+    "sex": "F",
+    "diagnosis": "Lumbar disc prolapse",
+    "path": "surgical_referral",
+    "outcome": "Referred for spine surgery evaluation",
+    "baseline": {
+      "bmi": 30,
+      "other_conditions": "Hypothyroidism",
+      "diet_notes": "Hydration, fibre-rich diet; avoid long periods of sitting."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-08-09",
+        "tags": [
+          "location_back",
+          "duration_subacute",
+          "radiating_leg_pain",
+          "pain_sitting"
+        ],
+        "findings": "Pain on forward bending, positive straight-leg raise on one side, power normal.",
+        "investigations": "No imaging at first visit.",
+        "treatment": "Short rest, avoid heavy lifting, pain relief, physiotherapy referral."
+      },
+      {
+        "week": 3,
+        "date": "2025-08-30",
+        "tags": [
+          "location_back",
+          "radiating_leg_pain",
+          "numbness"
+        ],
+        "findings": "Tingling and new leg weakness.",
+        "investigations": "MRI: large disc prolapse compressing a nerve root.",
+        "treatment": "Urgent spine review advised."
+      },
+      {
+        "week": 6,
+        "date": "2025-09-20",
+        "tags": [
+          "location_back",
+          "numbness",
+          "leg_weakness"
+        ],
+        "findings": "Weakness not improving.",
+        "investigations": "Nerve conduction review.",
+        "treatment": "Referred for spine surgery evaluation."
+      }
+    ]
+  },
+  {
+    "id": "C014",
+    "record_no": "HR-2025-0014",
+    "age": 49,
+    "sex": "M",
+    "diagnosis": "Lumbar disc prolapse",
+    "path": "surgical_referral",
+    "outcome": "Referred for spine surgery evaluation",
+    "baseline": {
+      "bmi": 31,
+      "other_conditions": "Type 2 diabetes",
+      "diet_notes": "Hydration, fibre-rich diet; avoid long periods of sitting."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-06-15",
+        "tags": [
+          "location_back",
+          "duration_subacute",
+          "radiating_leg_pain",
+          "pain_sitting"
+        ],
+        "findings": "Pain on forward bending, positive straight-leg raise on one side, power normal.",
+        "investigations": "No imaging at first visit.",
+        "treatment": "Short rest, avoid heavy lifting, pain relief, physiotherapy referral."
+      },
+      {
+        "week": 3,
+        "date": "2025-07-06",
+        "tags": [
+          "location_back",
+          "radiating_leg_pain",
+          "numbness",
+          "leg_weakness"
+        ],
+        "findings": "Tingling and new leg weakness.",
+        "investigations": "MRI: large disc prolapse compressing a nerve root.",
+        "treatment": "Urgent spine review advised."
+      },
+      {
+        "week": 6,
+        "date": "2025-07-27",
+        "tags": [
+          "location_back",
+          "numbness",
+          "leg_weakness"
+        ],
+        "findings": "Weakness not improving.",
+        "investigations": "Nerve conduction review.",
+        "treatment": "Referred for spine surgery evaluation."
+      }
+    ]
+  },
+  {
+    "id": "C015",
+    "record_no": "HR-2025-0015",
+    "age": 32,
+    "sex": "F",
+    "diagnosis": "Frozen shoulder / rotator cuff problem",
+    "path": "improved",
+    "outcome": "Improved with physiotherapy",
+    "baseline": {
+      "bmi": 25,
+      "other_conditions": "Type 2 diabetes",
+      "diet_notes": "Protein-rich diet; calcium and vitamin D."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-08-27",
+        "tags": [
+          "location_shoulder",
+          "duration_subacute",
+          "pain_night",
+          "limited_movement"
+        ],
+        "findings": "Painful restricted movement, worse overhead and lying on the side.",
+        "investigations": "Shoulder X-ray: normal bone.",
+        "treatment": "Physiotherapy, heat, gentle stretching."
+      },
+      {
+        "week": 3,
+        "date": "2025-09-17",
+        "tags": [
+          "location_shoulder",
+          "limited_movement"
+        ],
+        "findings": "Movement slowly improving.",
+        "investigations": "None.",
+        "treatment": "Stretching programme continued."
+      },
+      {
+        "week": 6,
+        "date": "2025-10-08",
+        "tags": [
+          "location_shoulder"
+        ],
+        "findings": "Near-full movement.",
+        "investigations": "None.",
+        "treatment": "Discharged to home exercises."
+      }
+    ]
+  },
+  {
+    "id": "C016",
+    "record_no": "HR-2025-0016",
+    "age": 31,
+    "sex": "M",
+    "diagnosis": "Frozen shoulder / rotator cuff problem",
+    "path": "improved",
+    "outcome": "Improved with physiotherapy",
+    "baseline": {
+      "bmi": 30,
+      "other_conditions": "Type 2 diabetes, hypertension",
+      "diet_notes": "Protein-rich diet; calcium and vitamin D."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-02-08",
+        "tags": [
+          "location_shoulder",
+          "duration_subacute",
+          "pain_night",
+          "limited_movement"
+        ],
+        "findings": "Painful restricted movement, worse overhead and lying on the side.",
+        "investigations": "Shoulder X-ray: normal bone.",
+        "treatment": "Physiotherapy, heat, gentle stretching."
+      },
+      {
+        "week": 3,
+        "date": "2025-03-01",
+        "tags": [
+          "location_shoulder",
+          "limited_movement"
+        ],
+        "findings": "Movement slowly improving.",
+        "investigations": "None.",
+        "treatment": "Stretching programme continued."
+      },
+      {
+        "week": 6,
+        "date": "2025-03-22",
+        "tags": [
+          "location_shoulder"
+        ],
+        "findings": "Near-full movement.",
+        "investigations": "None.",
+        "treatment": "Discharged to home exercises."
+      }
+    ]
+  },
+  {
+    "id": "C017",
+    "record_no": "HR-2025-0017",
+    "age": 73,
+    "sex": "M",
+    "diagnosis": "Frozen shoulder / rotator cuff problem",
+    "path": "improved",
+    "outcome": "Improved with physiotherapy",
+    "baseline": {
+      "bmi": 26,
+      "other_conditions": "None",
+      "diet_notes": "Protein-rich diet; calcium and vitamin D."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-05-31",
+        "tags": [
+          "location_shoulder",
+          "duration_subacute",
+          "pain_night",
+          "limited_movement"
+        ],
+        "findings": "Painful restricted movement, worse overhead and lying on the side.",
+        "investigations": "Shoulder X-ray: normal bone.",
+        "treatment": "Physiotherapy, heat, gentle stretching."
+      },
+      {
+        "week": 3,
+        "date": "2025-06-21",
+        "tags": [
+          "location_shoulder",
+          "limited_movement"
+        ],
+        "findings": "Movement slowly improving.",
+        "investigations": "None.",
+        "treatment": "Stretching programme continued."
+      },
+      {
+        "week": 6,
+        "date": "2025-07-12",
+        "tags": [
+          "location_shoulder"
+        ],
+        "findings": "Near-full movement.",
+        "investigations": "None.",
+        "treatment": "Discharged to home exercises."
+      }
+    ]
+  },
+  {
+    "id": "C018",
+    "record_no": "HR-2025-0018",
+    "age": 50,
+    "sex": "F",
+    "diagnosis": "Frozen shoulder / rotator cuff problem",
+    "path": "imaging_injection",
+    "outcome": "Steroid injection given for persistent stiffness",
+    "baseline": {
+      "bmi": 30,
+      "other_conditions": "None",
+      "diet_notes": "Protein-rich diet; calcium and vitamin D."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-08-30",
+        "tags": [
+          "location_shoulder",
+          "duration_subacute",
+          "pain_night",
+          "limited_movement"
+        ],
+        "findings": "Painful restricted movement, worse overhead and lying on the side.",
+        "investigations": "Shoulder X-ray: normal bone.",
+        "treatment": "Physiotherapy, heat, gentle stretching."
+      },
+      {
+        "week": 3,
+        "date": "2025-09-20",
+        "tags": [
+          "location_shoulder",
+          "pain_night",
+          "limited_movement"
+        ],
+        "findings": "Stiffness and night pain persist.",
+        "investigations": "Shoulder ultrasound ordered.",
+        "treatment": "Pain relief reviewed."
+      },
+      {
+        "week": 6,
+        "date": "2025-10-11",
+        "tags": [
+          "location_shoulder",
+          "pain_night",
+          "limited_movement"
+        ],
+        "findings": "Still stiff.",
+        "investigations": "Ultrasound: no full-thickness tear.",
+        "treatment": "Steroid injection given with physiotherapy."
+      }
+    ]
+  },
+  {
+    "id": "C019",
+    "record_no": "HR-2025-0019",
+    "age": 31,
+    "sex": "F",
+    "diagnosis": "Frozen shoulder / rotator cuff problem",
+    "path": "imaging_injection",
+    "outcome": "Steroid injection given for persistent stiffness",
+    "baseline": {
+      "bmi": 25,
+      "other_conditions": "None",
+      "diet_notes": "Protein-rich diet; calcium and vitamin D."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-09-15",
+        "tags": [
+          "location_shoulder",
+          "duration_subacute",
+          "pain_night",
+          "limited_movement"
+        ],
+        "findings": "Painful restricted movement, worse overhead and lying on the side.",
+        "investigations": "Shoulder X-ray: normal bone.",
+        "treatment": "Physiotherapy, heat, gentle stretching."
+      },
+      {
+        "week": 3,
+        "date": "2025-10-06",
+        "tags": [
+          "location_shoulder",
+          "pain_night",
+          "limited_movement"
+        ],
+        "findings": "Stiffness and night pain persist.",
+        "investigations": "Shoulder ultrasound ordered.",
+        "treatment": "Pain relief reviewed."
+      },
+      {
+        "week": 6,
+        "date": "2025-10-27",
+        "tags": [
+          "location_shoulder",
+          "pain_night",
+          "limited_movement"
+        ],
+        "findings": "Still stiff.",
+        "investigations": "Ultrasound: no full-thickness tear.",
+        "treatment": "Steroid injection given with physiotherapy."
+      }
+    ]
+  },
+  {
+    "id": "C020",
+    "record_no": "HR-2025-0020",
+    "age": 53,
+    "sex": "M",
+    "diagnosis": "Frozen shoulder / rotator cuff problem",
+    "path": "surgical_referral",
+    "outcome": "MRI showed cuff tear; referred for repair",
+    "baseline": {
+      "bmi": 28,
+      "other_conditions": "None",
+      "diet_notes": "Protein-rich diet; calcium and vitamin D."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-05-12",
+        "tags": [
+          "location_shoulder",
+          "duration_subacute",
+          "pain_night",
+          "limited_movement"
+        ],
+        "findings": "Painful restricted movement, worse overhead and lying on the side.",
+        "investigations": "Shoulder X-ray: normal bone.",
+        "treatment": "Physiotherapy, heat, gentle stretching."
+      },
+      {
+        "week": 3,
+        "date": "2025-06-02",
+        "tags": [
+          "location_shoulder",
+          "pain_night",
+          "arm_weakness"
+        ],
+        "findings": "Weakness lifting the arm.",
+        "investigations": "MRI: rotator cuff tear.",
+        "treatment": "Sling for comfort; activity modification."
+      },
+      {
+        "week": 6,
+        "date": "2025-06-23",
+        "tags": [
+          "location_shoulder",
+          "arm_weakness",
+          "limited_movement"
+        ],
+        "findings": "Weakness persists.",
+        "investigations": "Repeat assessment.",
+        "treatment": "Referred for cuff repair assessment."
+      }
+    ]
+  },
+  {
+    "id": "C021",
+    "record_no": "HR-2025-0021",
+    "age": 56,
+    "sex": "M",
+    "diagnosis": "Frozen shoulder / rotator cuff problem",
+    "path": "surgical_referral",
+    "outcome": "MRI showed cuff tear; referred for repair",
+    "baseline": {
+      "bmi": 29,
+      "other_conditions": "Hypertension",
+      "diet_notes": "Protein-rich diet; calcium and vitamin D."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-04-01",
+        "tags": [
+          "location_shoulder",
+          "duration_subacute",
+          "pain_night",
+          "limited_movement"
+        ],
+        "findings": "Painful restricted movement, worse overhead and lying on the side.",
+        "investigations": "Shoulder X-ray: normal bone.",
+        "treatment": "Physiotherapy, heat, gentle stretching."
+      },
+      {
+        "week": 3,
+        "date": "2025-04-22",
+        "tags": [
+          "location_shoulder",
+          "pain_night",
+          "arm_weakness"
+        ],
+        "findings": "Weakness lifting the arm.",
+        "investigations": "MRI: rotator cuff tear.",
+        "treatment": "Sling for comfort; activity modification."
+      },
+      {
+        "week": 6,
+        "date": "2025-05-13",
+        "tags": [
+          "location_shoulder",
+          "arm_weakness",
+          "limited_movement"
+        ],
+        "findings": "Weakness persists.",
+        "investigations": "Repeat assessment.",
+        "treatment": "Referred for cuff repair assessment."
+      }
+    ]
+  },
+  {
+    "id": "C022",
+    "record_no": "HR-2025-0022",
+    "age": 63,
+    "sex": "M",
+    "diagnosis": "Ankle sprain",
+    "path": "improved",
+    "outcome": "Healed with rest, brace and physiotherapy",
+    "baseline": {
+      "bmi": 26,
+      "other_conditions": "Hypertension",
+      "diet_notes": "Protein and vitamin C rich foods for healing."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-08-14",
+        "tags": [
+          "location_ankle",
+          "duration_acute",
+          "injury_recent",
+          "swelling",
+          "pain_walking"
+        ],
+        "findings": "Swelling and bruising around the ankle, tender over the ligament, walks with pain.",
+        "investigations": "Ankle X-ray to rule out fracture.",
+        "treatment": "Rest, ice, compression brace, early gentle movement."
+      },
+      {
+        "week": 3,
+        "date": "2025-09-04",
+        "tags": [
+          "location_ankle",
+          "pain_walking"
+        ],
+        "findings": "Swelling resolved, mild pain on walking.",
+        "investigations": "None.",
+        "treatment": "Physiotherapy for balance."
+      },
+      {
+        "week": 6,
+        "date": "2025-09-25",
+        "tags": [],
+        "findings": "Full walking, no pain.",
+        "investigations": "None.",
+        "treatment": "Gradual return to sport."
+      }
+    ]
+  },
+  {
+    "id": "C023",
+    "record_no": "HR-2025-0023",
+    "age": 42,
+    "sex": "F",
+    "diagnosis": "Ankle sprain",
+    "path": "improved",
+    "outcome": "Healed with rest, brace and physiotherapy",
+    "baseline": {
+      "bmi": 21,
+      "other_conditions": "None",
+      "diet_notes": "Protein and vitamin C rich foods for healing."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-07-19",
+        "tags": [
+          "location_ankle",
+          "duration_acute",
+          "injury_recent",
+          "swelling",
+          "pain_walking"
+        ],
+        "findings": "Swelling and bruising around the ankle, tender over the ligament, walks with pain.",
+        "investigations": "Ankle X-ray to rule out fracture.",
+        "treatment": "Rest, ice, compression brace, early gentle movement."
+      },
+      {
+        "week": 3,
+        "date": "2025-08-09",
+        "tags": [
+          "location_ankle",
+          "pain_walking"
+        ],
+        "findings": "Swelling resolved, mild pain on walking.",
+        "investigations": "None.",
+        "treatment": "Physiotherapy for balance."
+      },
+      {
+        "week": 6,
+        "date": "2025-08-30",
+        "tags": [],
+        "findings": "Full walking, no pain.",
+        "investigations": "None.",
+        "treatment": "Gradual return to sport."
+      }
+    ]
+  },
+  {
+    "id": "C024",
+    "record_no": "HR-2025-0024",
+    "age": 59,
+    "sex": "F",
+    "diagnosis": "Ankle sprain",
+    "path": "improved",
+    "outcome": "Healed with rest, brace and physiotherapy",
+    "baseline": {
+      "bmi": 24,
+      "other_conditions": "Hypertension",
+      "diet_notes": "Protein and vitamin C rich foods for healing."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-01-12",
+        "tags": [
+          "location_ankle",
+          "duration_acute",
+          "injury_recent",
+          "swelling",
+          "pain_walking"
+        ],
+        "findings": "Swelling and bruising around the ankle, tender over the ligament, walks with pain.",
+        "investigations": "Ankle X-ray to rule out fracture.",
+        "treatment": "Rest, ice, compression brace, early gentle movement."
+      },
+      {
+        "week": 3,
+        "date": "2025-02-02",
+        "tags": [
+          "location_ankle",
+          "pain_walking",
+          "swelling"
+        ],
+        "findings": "Swelling resolved, mild pain on walking.",
+        "investigations": "None.",
+        "treatment": "Physiotherapy for balance."
+      },
+      {
+        "week": 6,
+        "date": "2025-02-23",
+        "tags": [],
+        "findings": "Full walking, no pain.",
+        "investigations": "None.",
+        "treatment": "Gradual return to sport."
+      }
+    ]
+  },
+  {
+    "id": "C025",
+    "record_no": "HR-2025-0025",
+    "age": 67,
+    "sex": "M",
+    "diagnosis": "Ankle sprain",
+    "path": "imaging_injection",
+    "outcome": "X-ray done to rule out fracture; boot given",
+    "baseline": {
+      "bmi": 22,
+      "other_conditions": "Type 2 diabetes, hypertension",
+      "diet_notes": "Protein and vitamin C rich foods for healing."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-07-14",
+        "tags": [
+          "location_ankle",
+          "duration_acute",
+          "injury_recent",
+          "swelling",
+          "pain_walking"
+        ],
+        "findings": "Swelling and bruising around the ankle, tender over the ligament, walks with pain.",
+        "investigations": "Ankle X-ray to rule out fracture.",
+        "treatment": "Rest, ice, compression brace, early gentle movement."
+      },
+      {
+        "week": 3,
+        "date": "2025-08-04",
+        "tags": [
+          "location_ankle",
+          "swelling",
+          "pain_walking"
+        ],
+        "findings": "Persistent swelling, difficulty bearing weight.",
+        "investigations": "Repeat X-ray to rule out fracture.",
+        "treatment": "Walking boot given."
+      },
+      {
+        "week": 6,
+        "date": "2025-08-25",
+        "tags": [
+          "location_ankle",
+          "swelling"
+        ],
+        "findings": "Swelling reducing.",
+        "investigations": "None.",
+        "treatment": "Boot weaned; physiotherapy."
+      }
+    ]
+  },
+  {
+    "id": "C026",
+    "record_no": "HR-2025-0026",
+    "age": 57,
+    "sex": "M",
+    "diagnosis": "Ankle sprain",
+    "path": "imaging_injection",
+    "outcome": "X-ray done to rule out fracture; boot given",
+    "baseline": {
+      "bmi": 26,
+      "other_conditions": "Type 2 diabetes",
+      "diet_notes": "Protein and vitamin C rich foods for healing."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-02-02",
+        "tags": [
+          "location_ankle",
+          "duration_acute",
+          "injury_recent",
+          "swelling",
+          "pain_walking"
+        ],
+        "findings": "Swelling and bruising around the ankle, tender over the ligament, walks with pain.",
+        "investigations": "Ankle X-ray to rule out fracture.",
+        "treatment": "Rest, ice, compression brace, early gentle movement."
+      },
+      {
+        "week": 3,
+        "date": "2025-02-23",
+        "tags": [
+          "location_ankle",
+          "swelling",
+          "pain_walking",
+          "cannot_bear_weight"
+        ],
+        "findings": "Persistent swelling, difficulty bearing weight.",
+        "investigations": "Repeat X-ray to rule out fracture.",
+        "treatment": "Walking boot given."
+      },
+      {
+        "week": 6,
+        "date": "2025-03-16",
+        "tags": [
+          "location_ankle",
+          "swelling"
+        ],
+        "findings": "Swelling reducing.",
+        "investigations": "None.",
+        "treatment": "Boot weaned; physiotherapy."
+      }
+    ]
+  },
+  {
+    "id": "C027",
+    "record_no": "HR-2025-0027",
+    "age": 34,
+    "sex": "M",
+    "diagnosis": "Ankle sprain",
+    "path": "surgical_referral",
+    "outcome": "Ligament tear; referred for stabilisation",
+    "baseline": {
+      "bmi": 26,
+      "other_conditions": "None",
+      "diet_notes": "Protein and vitamin C rich foods for healing."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-07-26",
+        "tags": [
+          "location_ankle",
+          "duration_acute",
+          "injury_recent",
+          "swelling",
+          "pain_walking"
+        ],
+        "findings": "Swelling and bruising around the ankle, tender over the ligament, walks with pain.",
+        "investigations": "Ankle X-ray to rule out fracture.",
+        "treatment": "Rest, ice, compression brace, early gentle movement."
+      },
+      {
+        "week": 3,
+        "date": "2025-08-16",
+        "tags": [
+          "location_ankle",
+          "swelling",
+          "joint_instability"
+        ],
+        "findings": "Ankle gives way, swelling persists.",
+        "investigations": "MRI: complete ligament tear.",
+        "treatment": "Brace and crutches."
+      },
+      {
+        "week": 6,
+        "date": "2025-09-06",
+        "tags": [
+          "location_ankle",
+          "joint_instability"
+        ],
+        "findings": "Ongoing instability.",
+        "investigations": "Repeat assessment.",
+        "treatment": "Referred for ligament stabilisation."
+      }
+    ]
+  },
+  {
+    "id": "C028",
+    "record_no": "HR-2025-0028",
+    "age": 32,
+    "sex": "F",
+    "diagnosis": "Ankle sprain",
+    "path": "surgical_referral",
+    "outcome": "Ligament tear; referred for stabilisation",
+    "baseline": {
+      "bmi": 27,
+      "other_conditions": "None",
+      "diet_notes": "Protein and vitamin C rich foods for healing."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-04-13",
+        "tags": [
+          "location_ankle",
+          "duration_acute",
+          "injury_recent",
+          "swelling",
+          "pain_walking"
+        ],
+        "findings": "Swelling and bruising around the ankle, tender over the ligament, walks with pain.",
+        "investigations": "Ankle X-ray to rule out fracture.",
+        "treatment": "Rest, ice, compression brace, early gentle movement."
+      },
+      {
+        "week": 3,
+        "date": "2025-05-04",
+        "tags": [
+          "location_ankle",
+          "swelling",
+          "joint_instability"
+        ],
+        "findings": "Ankle gives way, swelling persists.",
+        "investigations": "MRI: complete ligament tear.",
+        "treatment": "Brace and crutches."
+      },
+      {
+        "week": 6,
+        "date": "2025-05-25",
+        "tags": [
+          "location_ankle",
+          "joint_instability"
+        ],
+        "findings": "Ongoing instability.",
+        "investigations": "Repeat assessment.",
+        "treatment": "Referred for ligament stabilisation."
+      }
+    ]
+  },
+  {
+    "id": "C029",
+    "record_no": "HR-2025-0029",
+    "age": 28,
+    "sex": "F",
+    "diagnosis": "Wrist fracture (distal radius)",
+    "path": "improved",
+    "outcome": "Healed in cast; physiotherapy for movement",
+    "baseline": {
+      "bmi": 28,
+      "other_conditions": "None",
+      "diet_notes": "Calcium, vitamin D and protein rich diet."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-02-27",
+        "tags": [
+          "location_wrist",
+          "duration_acute",
+          "injury_recent",
+          "swelling",
+          "limited_movement"
+        ],
+        "findings": "Swelling and tenderness at the wrist after a fall, reduced movement.",
+        "investigations": "Wrist X-ray: distal radius fracture.",
+        "treatment": "Fracture reduced if needed, cast applied, elevation advised."
+      },
+      {
+        "week": 3,
+        "date": "2025-03-20",
+        "tags": [
+          "location_wrist",
+          "limited_movement",
+          "swelling"
+        ],
+        "findings": "Cast intact, fingers moving well.",
+        "investigations": "None.",
+        "treatment": "Cast continued."
+      },
+      {
+        "week": 6,
+        "date": "2025-04-10",
+        "tags": [
+          "location_wrist"
+        ],
+        "findings": "Cast removed, stiffness only.",
+        "investigations": "X-ray: healing well.",
+        "treatment": "Physiotherapy for wrist movement."
+      }
+    ]
+  },
+  {
+    "id": "C030",
+    "record_no": "HR-2025-0030",
+    "age": 32,
+    "sex": "F",
+    "diagnosis": "Wrist fracture (distal radius)",
+    "path": "improved",
+    "outcome": "Healed in cast; physiotherapy for movement",
+    "baseline": {
+      "bmi": 26,
+      "other_conditions": "None",
+      "diet_notes": "Calcium, vitamin D and protein rich diet."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-01-19",
+        "tags": [
+          "location_wrist",
+          "duration_acute",
+          "injury_recent",
+          "swelling",
+          "limited_movement"
+        ],
+        "findings": "Swelling and tenderness at the wrist after a fall, reduced movement.",
+        "investigations": "Wrist X-ray: distal radius fracture.",
+        "treatment": "Fracture reduced if needed, cast applied, elevation advised."
+      },
+      {
+        "week": 3,
+        "date": "2025-02-09",
+        "tags": [
+          "location_wrist",
+          "limited_movement"
+        ],
+        "findings": "Cast intact, fingers moving well.",
+        "investigations": "None.",
+        "treatment": "Cast continued."
+      },
+      {
+        "week": 6,
+        "date": "2025-03-02",
+        "tags": [
+          "location_wrist"
+        ],
+        "findings": "Cast removed, stiffness only.",
+        "investigations": "X-ray: healing well.",
+        "treatment": "Physiotherapy for wrist movement."
+      }
+    ]
+  },
+  {
+    "id": "C031",
+    "record_no": "HR-2025-0031",
+    "age": 66,
+    "sex": "M",
+    "diagnosis": "Wrist fracture (distal radius)",
+    "path": "improved",
+    "outcome": "Healed in cast; physiotherapy for movement",
+    "baseline": {
+      "bmi": 27,
+      "other_conditions": "None",
+      "diet_notes": "Calcium, vitamin D and protein rich diet."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-07-02",
+        "tags": [
+          "location_wrist",
+          "duration_acute",
+          "injury_recent",
+          "swelling",
+          "limited_movement"
+        ],
+        "findings": "Swelling and tenderness at the wrist after a fall, reduced movement.",
+        "investigations": "Wrist X-ray: distal radius fracture.",
+        "treatment": "Fracture reduced if needed, cast applied, elevation advised."
+      },
+      {
+        "week": 3,
+        "date": "2025-07-23",
+        "tags": [
+          "location_wrist",
+          "limited_movement"
+        ],
+        "findings": "Cast intact, fingers moving well.",
+        "investigations": "None.",
+        "treatment": "Cast continued."
+      },
+      {
+        "week": 6,
+        "date": "2025-08-13",
+        "tags": [
+          "location_wrist"
+        ],
+        "findings": "Cast removed, stiffness only.",
+        "investigations": "X-ray: healing well.",
+        "treatment": "Physiotherapy for wrist movement."
+      }
+    ]
+  },
+  {
+    "id": "C032",
+    "record_no": "HR-2025-0032",
+    "age": 59,
+    "sex": "M",
+    "diagnosis": "Wrist fracture (distal radius)",
+    "path": "imaging_injection",
+    "outcome": "Repeat X-ray; nerve irritation treated",
+    "baseline": {
+      "bmi": 27,
+      "other_conditions": "Type 2 diabetes",
+      "diet_notes": "Calcium, vitamin D and protein rich diet."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-03-06",
+        "tags": [
+          "location_wrist",
+          "duration_acute",
+          "injury_recent",
+          "swelling",
+          "limited_movement"
+        ],
+        "findings": "Swelling and tenderness at the wrist after a fall, reduced movement.",
+        "investigations": "Wrist X-ray: distal radius fracture.",
+        "treatment": "Fracture reduced if needed, cast applied, elevation advised."
+      },
+      {
+        "week": 3,
+        "date": "2025-03-27",
+        "tags": [
+          "location_wrist",
+          "limited_movement",
+          "numbness"
+        ],
+        "findings": "Tingling in the fingers.",
+        "investigations": "Repeat X-ray; nerve irritation assessed.",
+        "treatment": "Cast loosened, elevation."
+      },
+      {
+        "week": 6,
+        "date": "2025-04-17",
+        "tags": [
+          "location_wrist",
+          "numbness"
+        ],
+        "findings": "Tingling reduced.",
+        "investigations": "None.",
+        "treatment": "Nerve irritation treated; cast changed."
+      }
+    ]
+  },
+  {
+    "id": "C033",
+    "record_no": "HR-2025-0033",
+    "age": 33,
+    "sex": "F",
+    "diagnosis": "Wrist fracture (distal radius)",
+    "path": "imaging_injection",
+    "outcome": "Repeat X-ray; nerve irritation treated",
+    "baseline": {
+      "bmi": 21,
+      "other_conditions": "Type 2 diabetes, hypertension",
+      "diet_notes": "Calcium, vitamin D and protein rich diet."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-06-14",
+        "tags": [
+          "location_wrist",
+          "duration_acute",
+          "injury_recent",
+          "swelling",
+          "limited_movement"
+        ],
+        "findings": "Swelling and tenderness at the wrist after a fall, reduced movement.",
+        "investigations": "Wrist X-ray: distal radius fracture.",
+        "treatment": "Fracture reduced if needed, cast applied, elevation advised."
+      },
+      {
+        "week": 3,
+        "date": "2025-07-05",
+        "tags": [
+          "location_wrist",
+          "limited_movement",
+          "numbness"
+        ],
+        "findings": "Tingling in the fingers.",
+        "investigations": "Repeat X-ray; nerve irritation assessed.",
+        "treatment": "Cast loosened, elevation."
+      },
+      {
+        "week": 6,
+        "date": "2025-07-26",
+        "tags": [
+          "location_wrist",
+          "numbness"
+        ],
+        "findings": "Tingling reduced.",
+        "investigations": "None.",
+        "treatment": "Nerve irritation treated; cast changed."
+      }
+    ]
+  },
+  {
+    "id": "C034",
+    "record_no": "HR-2025-0034",
+    "age": 58,
+    "sex": "F",
+    "diagnosis": "Wrist fracture (distal radius)",
+    "path": "surgical_referral",
+    "outcome": "Fracture shifted; plate fixation done",
+    "baseline": {
+      "bmi": 28,
+      "other_conditions": "None",
+      "diet_notes": "Calcium, vitamin D and protein rich diet."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-05-21",
+        "tags": [
+          "location_wrist",
+          "duration_acute",
+          "injury_recent",
+          "swelling",
+          "limited_movement"
+        ],
+        "findings": "Swelling and tenderness at the wrist after a fall, reduced movement.",
+        "investigations": "Wrist X-ray: distal radius fracture.",
+        "treatment": "Fracture reduced if needed, cast applied, elevation advised."
+      },
+      {
+        "week": 3,
+        "date": "2025-06-11",
+        "tags": [
+          "location_wrist",
+          "swelling",
+          "limited_movement",
+          "numbness"
+        ],
+        "findings": "Swelling and tingling, fracture position shifted.",
+        "investigations": "Repeat X-ray: displacement.",
+        "treatment": "Referred to the surgeon."
+      },
+      {
+        "week": 6,
+        "date": "2025-07-02",
+        "tags": [
+          "location_wrist",
+          "limited_movement"
+        ],
+        "findings": "After fixation, movement limited.",
+        "investigations": "Post-operative X-ray.",
+        "treatment": "Plate fixation done; physiotherapy started."
+      }
+    ]
+  },
+  {
+    "id": "C035",
+    "record_no": "HR-2025-0035",
+    "age": 72,
+    "sex": "F",
+    "diagnosis": "Wrist fracture (distal radius)",
+    "path": "surgical_referral",
+    "outcome": "Fracture shifted; plate fixation done",
+    "baseline": {
+      "bmi": 28,
+      "other_conditions": "Hypertension",
+      "diet_notes": "Calcium, vitamin D and protein rich diet."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-03-22",
+        "tags": [
+          "location_wrist",
+          "duration_acute",
+          "injury_recent",
+          "swelling",
+          "limited_movement"
+        ],
+        "findings": "Swelling and tenderness at the wrist after a fall, reduced movement.",
+        "investigations": "Wrist X-ray: distal radius fracture.",
+        "treatment": "Fracture reduced if needed, cast applied, elevation advised."
+      },
+      {
+        "week": 3,
+        "date": "2025-04-12",
+        "tags": [
+          "location_wrist",
+          "swelling",
+          "limited_movement"
+        ],
+        "findings": "Swelling and tingling, fracture position shifted.",
+        "investigations": "Repeat X-ray: displacement.",
+        "treatment": "Referred to the surgeon."
+      },
+      {
+        "week": 6,
+        "date": "2025-05-03",
+        "tags": [
+          "location_wrist",
+          "limited_movement"
+        ],
+        "findings": "After fixation, movement limited.",
+        "investigations": "Post-operative X-ray.",
+        "treatment": "Plate fixation done; physiotherapy started."
+      }
+    ]
+  },
+  {
+    "id": "C036",
+    "record_no": "HR-2025-0036",
+    "age": 72,
+    "sex": "M",
+    "diagnosis": "Plantar fasciitis / heel pain",
+    "path": "improved",
+    "outcome": "Improved with stretching and heel cushions",
+    "baseline": {
+      "bmi": 32,
+      "other_conditions": "Hypertension",
+      "diet_notes": "Weight management; anti-inflammatory foods."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-02-21",
+        "tags": [
+          "location_foot",
+          "duration_subacute",
+          "pain_first_steps_morning",
+          "pain_walking"
+        ],
+        "findings": "Tenderness at the heel, pain worst on the first steps in the morning.",
+        "investigations": "No imaging at first visit.",
+        "treatment": "Calf and plantar fascia stretching, heel cushions."
+      },
+      {
+        "week": 3,
+        "date": "2025-03-14",
+        "tags": [
+          "location_foot",
+          "pain_first_steps_morning"
+        ],
+        "findings": "Morning pain easing.",
+        "investigations": "None.",
+        "treatment": "Stretching continued."
+      },
+      {
+        "week": 6,
+        "date": "2025-04-04",
+        "tags": [],
+        "findings": "Pain-free walking.",
+        "investigations": "None.",
+        "treatment": "Continue heel cushions."
+      }
+    ]
+  },
+  {
+    "id": "C037",
+    "record_no": "HR-2025-0037",
+    "age": 77,
+    "sex": "F",
+    "diagnosis": "Plantar fasciitis / heel pain",
+    "path": "improved",
+    "outcome": "Improved with stretching and heel cushions",
+    "baseline": {
+      "bmi": 32,
+      "other_conditions": "Hypothyroidism",
+      "diet_notes": "Weight management; anti-inflammatory foods."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-07-07",
+        "tags": [
+          "location_foot",
+          "duration_subacute",
+          "pain_first_steps_morning",
+          "pain_walking"
+        ],
+        "findings": "Tenderness at the heel, pain worst on the first steps in the morning.",
+        "investigations": "No imaging at first visit.",
+        "treatment": "Calf and plantar fascia stretching, heel cushions."
+      },
+      {
+        "week": 3,
+        "date": "2025-07-28",
+        "tags": [
+          "location_foot",
+          "pain_first_steps_morning"
+        ],
+        "findings": "Morning pain easing.",
+        "investigations": "None.",
+        "treatment": "Stretching continued."
+      },
+      {
+        "week": 6,
+        "date": "2025-08-18",
+        "tags": [],
+        "findings": "Pain-free walking.",
+        "investigations": "None.",
+        "treatment": "Continue heel cushions."
+      }
+    ]
+  },
+  {
+    "id": "C038",
+    "record_no": "HR-2025-0038",
+    "age": 68,
+    "sex": "F",
+    "diagnosis": "Plantar fasciitis / heel pain",
+    "path": "improved",
+    "outcome": "Improved with stretching and heel cushions",
+    "baseline": {
+      "bmi": 33,
+      "other_conditions": "None",
+      "diet_notes": "Weight management; anti-inflammatory foods."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-06-23",
+        "tags": [
+          "location_foot",
+          "duration_subacute",
+          "pain_first_steps_morning",
+          "pain_walking"
+        ],
+        "findings": "Tenderness at the heel, pain worst on the first steps in the morning.",
+        "investigations": "No imaging at first visit.",
+        "treatment": "Calf and plantar fascia stretching, heel cushions."
+      },
+      {
+        "week": 3,
+        "date": "2025-07-14",
+        "tags": [
+          "location_foot",
+          "pain_first_steps_morning"
+        ],
+        "findings": "Morning pain easing.",
+        "investigations": "None.",
+        "treatment": "Stretching continued."
+      },
+      {
+        "week": 6,
+        "date": "2025-08-04",
+        "tags": [],
+        "findings": "Pain-free walking.",
+        "investigations": "None.",
+        "treatment": "Continue heel cushions."
+      }
+    ]
+  },
+  {
+    "id": "C039",
+    "record_no": "HR-2025-0039",
+    "age": 53,
+    "sex": "F",
+    "diagnosis": "Plantar fasciitis / heel pain",
+    "path": "imaging_injection",
+    "outcome": "Persistent pain; injection and orthotics",
+    "baseline": {
+      "bmi": 27,
+      "other_conditions": "Hypothyroidism",
+      "diet_notes": "Weight management; anti-inflammatory foods."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-05-08",
+        "tags": [
+          "location_foot",
+          "duration_subacute",
+          "pain_first_steps_morning",
+          "pain_walking"
+        ],
+        "findings": "Tenderness at the heel, pain worst on the first steps in the morning.",
+        "investigations": "No imaging at first visit.",
+        "treatment": "Calf and plantar fascia stretching, heel cushions."
+      },
+      {
+        "week": 3,
+        "date": "2025-05-29",
+        "tags": [
+          "location_foot",
+          "pain_first_steps_morning",
+          "pain_walking"
+        ],
+        "findings": "Pain on walking persists.",
+        "investigations": "Heel ultrasound.",
+        "treatment": "Orthotic insoles prescribed."
+      },
+      {
+        "week": 6,
+        "date": "2025-06-19",
+        "tags": [
+          "location_foot",
+          "pain_walking"
+        ],
+        "findings": "Partial relief.",
+        "investigations": "None.",
+        "treatment": "Injection given; orthotics continued."
+      }
+    ]
+  },
+  {
+    "id": "C040",
+    "record_no": "HR-2025-0040",
+    "age": 50,
+    "sex": "F",
+    "diagnosis": "Plantar fasciitis / heel pain",
+    "path": "imaging_injection",
+    "outcome": "Persistent pain; injection and orthotics",
+    "baseline": {
+      "bmi": 24,
+      "other_conditions": "Hypertension",
+      "diet_notes": "Weight management; anti-inflammatory foods."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-09-15",
+        "tags": [
+          "location_foot",
+          "duration_subacute",
+          "pain_first_steps_morning",
+          "pain_walking"
+        ],
+        "findings": "Tenderness at the heel, pain worst on the first steps in the morning.",
+        "investigations": "No imaging at first visit.",
+        "treatment": "Calf and plantar fascia stretching, heel cushions."
+      },
+      {
+        "week": 3,
+        "date": "2025-10-06",
+        "tags": [
+          "location_foot",
+          "pain_first_steps_morning",
+          "pain_walking"
+        ],
+        "findings": "Pain on walking persists.",
+        "investigations": "Heel ultrasound.",
+        "treatment": "Orthotic insoles prescribed."
+      },
+      {
+        "week": 6,
+        "date": "2025-10-27",
+        "tags": [
+          "location_foot",
+          "pain_walking"
+        ],
+        "findings": "Partial relief.",
+        "investigations": "None.",
+        "treatment": "Injection given; orthotics continued."
+      }
+    ]
+  },
+  {
+    "id": "C041",
+    "record_no": "HR-2025-0041",
+    "age": 44,
+    "sex": "F",
+    "diagnosis": "Plantar fasciitis / heel pain",
+    "path": "surgical_referral",
+    "outcome": "X-ray/MRI found stress fracture; offloading boot",
+    "baseline": {
+      "bmi": 33,
+      "other_conditions": "Hypertension",
+      "diet_notes": "Weight management; anti-inflammatory foods."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-09-04",
+        "tags": [
+          "location_foot",
+          "duration_subacute",
+          "pain_first_steps_morning",
+          "pain_walking"
+        ],
+        "findings": "Tenderness at the heel, pain worst on the first steps in the morning.",
+        "investigations": "No imaging at first visit.",
+        "treatment": "Calf and plantar fascia stretching, heel cushions."
+      },
+      {
+        "week": 3,
+        "date": "2025-09-25",
+        "tags": [
+          "location_foot",
+          "pain_night",
+          "swelling"
+        ],
+        "findings": "Night pain and swelling, unusual for fasciitis.",
+        "investigations": "X-ray/MRI: stress fracture.",
+        "treatment": "Offloading boot."
+      },
+      {
+        "week": 6,
+        "date": "2025-10-16",
+        "tags": [
+          "location_foot",
+          "pain_night",
+          "swelling"
+        ],
+        "findings": "Pain reducing in the boot.",
+        "investigations": "Follow-up imaging planned.",
+        "treatment": "Boot continued; weight-bearing restricted."
+      }
+    ]
+  },
+  {
+    "id": "C042",
+    "record_no": "HR-2025-0042",
+    "age": 74,
+    "sex": "M",
+    "diagnosis": "Plantar fasciitis / heel pain",
+    "path": "surgical_referral",
+    "outcome": "X-ray/MRI found stress fracture; offloading boot",
+    "baseline": {
+      "bmi": 29,
+      "other_conditions": "None",
+      "diet_notes": "Weight management; anti-inflammatory foods."
+    },
+    "visits": [
+      {
+        "week": 0,
+        "date": "2025-08-22",
+        "tags": [
+          "location_foot",
+          "duration_subacute",
+          "pain_first_steps_morning",
+          "pain_walking"
+        ],
+        "findings": "Tenderness at the heel, pain worst on the first steps in the morning.",
+        "investigations": "No imaging at first visit.",
+        "treatment": "Calf and plantar fascia stretching, heel cushions."
+      },
+      {
+        "week": 3,
+        "date": "2025-09-12",
+        "tags": [
+          "location_foot",
+          "pain_night",
+          "swelling"
+        ],
+        "findings": "Night pain and swelling, unusual for fasciitis.",
+        "investigations": "X-ray/MRI: stress fracture.",
+        "treatment": "Offloading boot."
+      },
+      {
+        "week": 6,
+        "date": "2025-10-03",
+        "tags": [
+          "location_foot",
+          "pain_night",
+          "swelling"
+        ],
+        "findings": "Pain reducing in the boot.",
+        "investigations": "Follow-up imaging planned.",
+        "treatment": "Boot continued; weight-bearing restricted."
+      }
+    ]
+  }
+]

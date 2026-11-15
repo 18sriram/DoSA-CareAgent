@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reception</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;600&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/common.css">
+<style>
+  .layout { display: grid; grid-template-columns: 390px 1fr; gap: 22px; align-items: start; }
+  .found { margin-top: 6px; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .found button { display: block; width: 100%; text-align: left; background: #fff; border: 0; border-bottom: 1px solid var(--line); padding: 8px 11px; }
+  .found button:hover { background: var(--teal-soft); } .found button:last-child { border-bottom: 0; }
+  .picked { background: var(--teal-soft); border-radius: 8px; padding: 9px 12px; margin-top: 10px; display: flex; justify-content: space-between; gap: 8px; align-items: center; }
+  .emergency-banner { background: var(--emergency-soft); border: 1px solid var(--emergency); color: var(--emergency); font-weight: 600; padding: 12px 16px; border-radius: 10px; margin-bottom: 18px; }
+  .slip { text-align: center; }
+  .slip img { width: 220px; height: 220px; }
+  .slip .hosp { font-weight: 600; font-size: 1.1rem; }
+  .slip .link { word-break: break-all; font-size: .72rem; color: var(--muted); margin-top: 6px; }
+  .slip .te { margin-top: 10px; font-size: .95rem; }
+  .pinbox { margin-top: 16px; padding-top: 14px; border-top: 2px dashed var(--line); }
+  .pin { font-size: 2rem; letter-spacing: .35em; font-weight: 600; margin: 4px 0 8px; padding-left: .35em; }
+  .slotday { font-weight: 600; font-size: .85rem; margin: 10px 0 5px; }
+  .slotbtns { display: flex; flex-wrap: wrap; gap: 6px; }
+  .slotbtns button { background: #fff; border: 1.5px solid var(--line); border-radius: 8px; padding: 6px 12px; font: inherit; }
+  .slotbtns button:hover { border-color: var(--teal); }
+  .slotbtns button[aria-pressed="true"] { background: var(--teal); border-color: var(--teal); color: #fff; }
+  .actions { display: flex; gap: 8px; justify-content: center; margin-top: 16px; flex-wrap: wrap; }
+  @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
+  @media print {
+    body * { visibility: hidden; }
+    #slipbox, #slipbox * { visibility: visible; }
+    #slipbox { position: absolute; left: 0; top: 0; width: 100%; box-shadow: none; }
+    .no-print { display: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="page"><div class="wrapper">
+  <div id="alerts"></div>
+  <div class="tabs" role="tablist" id="ftabs">
+    <button role="tab" aria-selected="true" data-tab="visits">Visits</button>
+    <button role="tab" aria-selected="false" data-tab="appts">Appointments</button>
+  </div>
+  <div id="tab-visits"><div class="layout">
+    <section class="card" aria-labelledby="regh">
+      <h2 id="regh">Register a visit</h2>
+      <p class="muted">The patient scans the QR code on their token slip and answers a few questions by voice while they wait.</p>
+      <label class="field" for="q">Returning patient? Search by name, phone or MRN</label>
+      <input id="q" type="search" autocomplete="off" placeholder="Type at least 2 characters">
+      <div id="found" class="found" hidden></div>
+      <div id="picked" class="picked" hidden></div>
+      <div id="newfields">
+        <label class="field" for="name">Full name</label>
+        <input id="name" type="text" maxlength="80" autocomplete="off">
+        <div class="row2">
+          <div><label class="field" for="age">Age</label><input id="age" type="number" min="0" max="120"></div>
+          <div><label class="field" for="sex">Sex</label>
+            <select id="sex"><option value="">-</option><option value="F">Female</option><option value="M">Male</option><option value="O">Other</option></select></div>
+        </div>
+        <label class="field" for="phone">Phone number</label>
+        <input id="phone" type="text" inputmode="tel" placeholder="e.g. 9876543210" autocomplete="off">
+      </div>
+      <label class="field" for="doctor">Doctor</label>
+      <select id="doctor"></select>
+      <div class="error" id="err" role="alert"></div>
+      <button class="btn" id="go" style="width:100%;margin-top:14px;padding:12px">Register and create token</button>
+    </section>
+    <section class="card" aria-labelledby="vh">
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><h2 id="vh">Today's visits</h2><span class="muted" id="count"></span></div>
+      <div class="scroll-x"><table>
+        <thead><tr><th>Patient</th><th>Doctor</th><th>Registered</th><th>Status</th><th></th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table></div>
+      <p class="muted" id="none" hidden>No visits yet.</p>
+    </section>
+  </div></div>
+  <div id="tab-appts" hidden><div class="layout">
+    <section class="card" aria-labelledby="aph">
+      <h2 id="aph">Book an appointment</h2>
+      <label class="field" for="ap-doctor">Doctor</label><select id="ap-doctor"></select>
+      <label class="field" for="ap-q">Patient (search by name, phone or MRN)</label>
+      <input id="ap-q" type="search" autocomplete="off" placeholder="Type at least 2 characters">
+      <div id="ap-found" class="found" hidden></div><div id="ap-picked" class="picked" hidden></div>
+      <label class="field">Free times</label><div id="ap-slots"></div>
+      <div class="error" id="ap-err" role="alert"></div>
+      <button class="btn" id="ap-book" style="width:100%;margin-top:12px;padding:12px">Book appointment</button>
+    </section>
+    <section class="card" aria-labelledby="aph2"><h2 id="aph2">Upcoming appointments</h2>
+      <div class="scroll-x"><table><thead><tr><th>When</th><th>Patient</th><th>Doctor</th><th>Booked</th><th></th></tr></thead><tbody id="ap-rows"></tbody></table></div>
+      <p class="muted" id="ap-none" hidden>No upcoming appointments.</p></section>
+  </div></div>
+</div></div>
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mh">
+  <div class="scrim" id="mscrim"></div>
+  <div class="box" id="slipbox">
+    <div class="slip">
+      <div class="hosp" id="s_hosp"></div>
+      <h2 id="mh" style="margin:6px 0 2px">Pre-visit token</h2>
+      <div id="s_who" style="font-weight:600"></div>
+      <div class="muted" id="s_meta"></div>
+      <div id="s_qrbox">
+        <img id="s_qr" alt="QR code for the patient's pre-visit call" style="margin-top:12px">
+        <div class="te">ఈ QR కోడ్‌ను మీ ఫోన్‌తో స్కాన్ చేసి, ప్రశ్నలకు సమాధానం చెప్పండి.</div>
+        <div class="muted">Scan this QR code with your phone and answer the questions out loud.</div>
+        <div class="link" id="s_link"></div>
+        <div class="muted" id="s_exp" style="margin-top:6px"></div>
+      </div>
+      <div id="s_pinbox" class="pinbox" hidden>
+        <div class="muted">Help-line PIN</div>
+        <div class="pin" id="s_pin"></div>
+        <div class="muted">Keep this PIN private. To ask about your medicines or report a problem, open <b id="s_help"></b>, or call the hospital, and give your phone number and this PIN.</div>
+        <div class="te">ఈ PIN ని ఎవరికీ చెప్పవద్దు.</div>
+      </div>
+    </div>
+    <div class="actions no-print">
+      <button class="btn" id="print">Print token</button>
+      <button class="btn secondary" id="copy">Copy link</button>
+      <button class="btn secondary" id="close">Done</button>
+    </div>
+  </div>
+</div>
+<script src="/static/js/common.js"></script>
+<script src="/static/js/frontdesk.js"></script>
+</body>
+</html>

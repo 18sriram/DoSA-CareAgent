@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+venv/
+.env
+data/hospital.db*
+data/audio_cache/
+tests/
+.git

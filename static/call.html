@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pre-visit call</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;600&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #e9f0f3;
+    --surface: #ffffff;
+    --ink: #12303b;
+    --muted: #5d7681;
+    --teal: #0f6e74;
+    --teal-soft: #d6ebec;
+    --alert: #b3261e;
+    --alert-soft: #fbe3e1;
+    --line: #cfdce1;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: "Noto Sans Telugu", "Noto Sans", system-ui, sans-serif;
+    display: flex; justify-content: center;
+  }
+  .phone {
+    width: 100%; max-width: 440px; height: 100%;
+    display: flex; flex-direction: column; background: var(--surface);
+    box-shadow: 0 0 0 1px var(--line);
+  }
+  header { padding: 18px 20px 14px; border-bottom: 1px solid var(--line); }
+  header h1 { font-size: 1.05rem; margin: 0 0 2px; font-weight: 600; }
+  header p { margin: 0; font-size: .85rem; color: var(--muted); }
+  #progress { margin-top: 10px; height: 4px; background: var(--teal-soft); border-radius: 2px; overflow: hidden; }
+  #progress i { display: block; height: 100%; width: 0; background: var(--teal); transition: width .4s; }
+  #idform { text-align: left; margin-bottom: 14px; }
+  #idform label { display: block; font-size: .82rem; color: var(--muted); margin: 10px 0 4px; }
+  #idform input { width: 100%; font: inherit; padding: 11px 12px; border: 1px solid var(--line); border-radius: 8px; }
+  .idhelp { margin: 0 0 4px; font-size: .9rem; color: var(--ink); }
+  #stepText { font-size: .8rem; color: var(--muted); margin-top: 6px; min-height: 1.2em; }
+  #banner {
+    display: none; background: var(--alert-soft); color: var(--alert);
+    padding: 12px 20px; font-weight: 600; border-bottom: 1px solid var(--alert);
+  }
+  #log { flex: 1; overflow-y: auto; padding: 18px 16px; display: flex; flex-direction: column; gap: 10px; }
+  .bubble { max-width: 86%; padding: 10px 14px; border-radius: 14px; line-height: 1.55; font-size: 1rem; }
+  .agent { align-self: flex-start; background: var(--teal-soft); border-bottom-left-radius: 4px; }
+  .patient { align-self: flex-end; background: #eef1f3; border: 1px solid var(--line); border-bottom-right-radius: 4px; }
+  .replay { display: block; margin-top: 6px; background: none; border: 0; padding: 0; color: var(--teal);
+            font: inherit; font-size: .85rem; text-decoration: underline; cursor: pointer; }
+  .note { align-self: center; color: var(--muted); font-size: .85rem; }
+  footer { padding: 14px 20px 22px; border-top: 1px solid var(--line); text-align: center; }
+  #status { min-height: 1.4em; font-size: .9rem; color: var(--muted); margin-bottom: 10px; }
+  #status.error { color: var(--alert); }
+  button { font: inherit; cursor: pointer; }
+  #start {
+    background: var(--teal); color: #fff; border: 0; border-radius: 999px;
+    padding: 14px 28px; font-weight: 600; font-size: 1rem;
+  }
+  #mic {
+    --level: 0; display: none; width: 84px; height: 84px; border-radius: 50%;
+    border: 0; background: var(--teal); color: #fff; margin: 0 auto;
+    box-shadow: 0 0 0 calc(4px + var(--level) * 26px) rgba(15,110,116,.22);
+    transition: box-shadow .08s linear, background .2s;
+  }
+  #mic svg { width: 34px; height: 34px; }
+  #mic.recording { background: var(--alert); box-shadow: 0 0 0 calc(4px + var(--level) * 26px) rgba(179,38,30,.22); }
+  #mic:disabled { background: #9db3ba; box-shadow: none; cursor: default; }
+  #typebox { display: none; gap: 8px; margin-top: 12px; }
+  #typebox input { flex: 1; font: inherit; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; min-width: 0; }
+  #typebox button { background: var(--teal); color: #fff; border: 0; border-radius: 8px; padding: 0 16px; font-weight: 600; }
+  button:focus-visible { outline: 3px solid #1b8fa0; outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<main class="phone">
+  <header>
+    <h1 id="title">Orthopaedics pre-visit call</h1>
+    <p id="who"></p>
+    <div id="progress"><i></i></div>
+    <div id="stepText"></div>
+  </header>
+  <div id="banner" role="alert"></div>
+  <section id="log" aria-live="polite"></section>
+  <footer>
+    <div id="status"></div>
+    <div id="idform" hidden>
+      <p class="idhelp">Enter the phone number you registered with and the 6-digit PIN printed on your token slip.</p>
+      <label for="phone">Phone number</label>
+      <input id="phone" type="text" inputmode="tel" autocomplete="tel" placeholder="e.g. 9876543210">
+      <label for="pin">PIN</label>
+      <input id="pin" type="password" inputmode="numeric" autocomplete="off" maxlength="6" placeholder="6 digits">
+    </div>
+    <button id="start">Start call</button>
+    <button id="mic" aria-label="Tap to speak, tap again to stop">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="9" y="3" width="6" height="12" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path>
+      </svg>
+    </button>
+    <div id="typebox">
+      <input id="typed" type="text" placeholder="Type your answer here" aria-label="Type your answer">
+      <button id="sendTyped">Send</button>
+    </div>
+  </footer>
+</main>
+
+<script src="/static/js/call.js"></script>
+</body>
+</html>

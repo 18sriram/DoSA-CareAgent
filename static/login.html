@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;600&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/common.css">
+<style>
+  body { align-items: center; justify-content: center; padding: 20px; }
+  .login { width: min(420px, 100%); }
+  .logo { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+  .logo .mark { width: 42px; height: 42px; border-radius: 12px; background: var(--teal); color: #fff; display: grid; place-items: center; font-weight: 600; font-size: 1.2rem; }
+  .logo h1 { font-size: 1.25rem; } .logo p { margin: 0; }
+  .btn.full { width: 100%; margin-top: 18px; padding: 12px; }
+  .foot { text-align: center; margin-top: 14px; }
+</style>
+</head>
+<body>
+<main class="login">
+  <div class="card">
+    <div class="logo"><div class="mark" aria-hidden="true">C</div><div><h1>CareAgent</h1><p class="muted" id="hospital">Staff sign in</p></div></div>
+    <form id="signin" autocomplete="on">
+      <label class="field" for="u">Username</label>
+      <input id="u" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" required autofocus>
+      <label class="field" for="p">Password</label>
+      <input id="p" type="password" autocomplete="current-password" required>
+      <div class="error" id="err" role="alert"></div>
+      <button class="btn full" id="go" type="submit">Sign in</button>
+    </form>
+    <form id="change" hidden>
+      <h2 style="margin-bottom:6px">Choose your own password</h2>
+      <p class="muted">Your administrator gave you a temporary password. Pick a new one that only you know.</p>
+      <div id="n0wrap" hidden><label class="field" for="n0">Temporary password</label>
+      <input id="n0" type="password" autocomplete="current-password"></div>
+      <label class="field" for="n1">New password</label>
+      <input id="n1" type="password" autocomplete="new-password" required>
+      <label class="field" for="n2">Repeat new password</label>
+      <input id="n2" type="password" autocomplete="new-password" required>
+      <p class="muted" style="margin:8px 0 0">At least 10 characters, mixing letters and digits or symbols.</p>
+      <div class="error" id="err2" role="alert"></div>
+      <button class="btn full" type="submit">Save and continue</button>
+    </form>
+  </div>
+  <p class="muted foot">Patients: please use the link or QR code from the reception desk.</p>
+</main>
+<script src="/static/js/login.js"></script>
+</body>
+</html>

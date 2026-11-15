@@ -1,0 +1,11 @@
+services:
+  careagent:
+    build: .
+    ports: ["8000:8000"]
+    env_file: .env
+    environment:
+      HOSPITAL_DB: /srv/data/hospital.db
+      AUDIO_DIR: /srv/data/audio_cache
+    volumes: ["./data:/srv/data"]
+    restart: unless-stopped
+# First run:  docker compose run --rm careagent python manage.py create-user
